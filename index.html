@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mujibur Rahman Noori — Web Designer</title>
+  <meta name="description" content="Mujibur Rahman Noori — طراح وبسایت | HTML, CSS, TailwindCSS, JS, PHP, React, SQL" />
+  <style>
+    /* Modern blue & white resume */
+    :root{
+      --bg:#f6fbff;
+      --card:#ffffff;
+      --primary:#0b74ff;
+      --muted:#55657a;
+      --accent:#0b74ff;
+      --glass: rgba(11,116,255,0.06);
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#eaf4ff 0%, var(--bg) 100%); color:#0b2136; -webkit-font-smoothing:antialiased; padding:28px;}
+    .wrapper{max-width:1000px; margin:0 auto; display:grid; grid-template-columns: 320px 1fr; gap:28px; align-items:start;}
+    .card{background:var(--card); padding:22px; border-radius:14px; box-shadow: 0 10px 30px rgba(11,29,50,0.06); border:1px solid rgba(11,116,255,0.06);}
+    .left .photo{width:100%; border-radius:12px; overflow:hidden; border:6px solid rgba(11,116,255,0.06); background:linear-gradient(180deg, rgba(11,116,255,0.03), rgba(11,116,255,0.01)); display:flex; align-items:center; justify-content:center;}
+    .photo img{display:block; width:100%; height:auto; object-fit:cover;}
+    h1{margin:12px 0 4px; font-size:22px; letter-spacing:0.2px}
+    .title{color:var(--muted); font-size:13px; margin-bottom:8px}
+    .bio{font-size:14px; color:#123144; line-height:1.5; margin-bottom:12px}
+    .meta{font-size:13px; color:var(--muted); margin-bottom:12px}
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .skill{background:linear-gradient(90deg, rgba(11,116,255,0.06), rgba(11,116,255,0.02)); padding:8px 10px; border-radius:8px; font-size:13px; color:var(--primary); border:1px solid rgba(11,116,255,0.08)}
+    .btns{display:flex; gap:10px; margin-top:12px}
+    .btn{padding:10px 14px; border-radius:10px; cursor:pointer; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px}
+    .btn-primary{background:linear-gradient(90deg,var(--primary), #0068e6); color:white; border:none; box-shadow:0 6px 18px rgba(11,116,255,0.18)}
+    .btn-outline{background:transparent; color:var(--primary); border:1px solid rgba(11,116,255,0.12)}
+    .section{margin-bottom:18px}
+    .section h3{margin:0 0 10px; font-size:15px; color:#0b2136}
+    .timeline{display:flex; flex-direction:column; gap:10px}
+    .item{background:linear-gradient(180deg, rgba(240,249,255,0.9), #fff); padding:12px; border-radius:8px; border:1px solid rgba(11,116,255,0.04)}
+    .item small{display:block; color:var(--muted); margin-bottom:6px}
+    footer{margin-top:18px; text-align:center; color:var(--muted); font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .wrapper{grid-template-columns:1fr; padding-bottom:40px}
+      .left{order:2}
+    }
+    .chip{display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; background:rgba(11,116,255,0.06); color:var(--primary); border:1px solid rgba(11,116,255,0.08)}
+    .projects{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px}
+    .proj{padding:12px; border-radius:8px; border:1px solid rgba(11,116,255,0.04); background:linear-gradient(180deg, rgba(240,249,255,0.9), #fff)}
+    .contact-list{display:flex; flex-direction:column; gap:8px}
+    .contact-list a{color:var(--primary); text-decoration:none; font-weight:700}
+    /* subtle hover */
+    .proj:hover{transform:translateY(-6px); transition:transform .25s ease}
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    <aside class="left card">
+      <div class="photo">
+        <img src="photo.jpg" alt="Mujibur Rahman Noori" />
+      </div>
+      <h1>Mujibur Rahman Noori</h1>
+      <div class="title">طراح وبسایت — Web Designer / Frontend Developer</div>
+      <div class="meta">تجربه: 1.5 سال • تحصیلات: پُهنتون خوانده</div>
+      <p class="bio">من طراح و توسعه‌دهنده وب هستم؛ تخصصم در ساخت وبسایت‌های واکنش‌گرا و زیباست، با تمرکز روی تجربهٔ کاربر و افزایش تبدیل مشتری.</p>
+
+      <div class="section">
+        <h3>مهارت‌ها</h3>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">TailwindCSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">jQuery</span>
+          <span class="skill">PHP</span>
+          <span class="skill">React</span>
+          <span class="skill">SQL</span>
+          <span class="skill">MySQL</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>تماس</h3>
+        <div class="contact-list">
+          <div><span class="chip">موبایل</span> <a href="tel:+93745647237">+93 745 647 237</a></div>
+          <div><span class="chip">واتساپ</span> <a href="https://wa.me/93790515037" target="_blank">0790 515 037</a></div>
+          <div><span class="chip">زبان‌ها</span> دری • پشتو • انگلیسی</div>
+        </div>
+        <div class="btns" style="margin-top:12px">
+          <a class="btn btn-primary" href="https://wa.me/93790515037" target="_blank">ارسال پیام واتساپ</a>
+          <a class="btn btn-outline" href="#contact">بیشتر</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="right card">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+        <div>
+          <h2 style="margin:0">سلام 👋</h2>
+          <div style="color:var(--muted); margin-top:6px">من موجیب — طراحی وبسایت، فرانت‌اند و بک‌اند</div>
+        </div>
+        <div style="text-align:right">
+          <a class="btn btn-primary" href="https://wa.me/93790515037" target="_blank">درخواست پروژه</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>درباره من</h3>
+        <p>با یک سال و نیم تجربه در پروژه‌های طراحی وب و توسعه، من سایت‌هایی می‌سازم که زیبا، سریع و متمرکز بر تبدیل بازدیدکننده به مشتری هستند.</p>
+      </div>
+
+      <div class="section">
+        <h3>تجربه کاری & پروژه‌ها</h3>
+        <div class="timeline">
+          <div class="item">
+            <small>2023 — اکنون</small>
+            <strong>طراح و توسعه‌دهنده وب (Freelance)</strong>
+            <div style="color:var(--muted); margin-top:6px">پروژه‌ها شامل فروشگاه آنلاین، پورتفولیو، صفحات معرفی شرکت و داشبوردهای ساده.</div>
+          </div>
+          <div class="item">
+            <small>نمونه پروژه‌ها</small>
+            <div class="projects" style="margin-top:8px;">
+              <div class="proj"><strong>فروشگاه آنلاین</strong><div style="color:var(--muted); font-size:13px; margin-top:6px">صفحه محصولات و پرداخت</div></div>
+              <div class="proj"><strong>پورتفولیو</strong><div style="color:var(--muted); font-size:13px; margin-top:6px">نمایش نمونه‌کارها و تماس</div></div>
+              <div class="proj"><strong>داشبورد</strong><div style="color:var(--muted); font-size:13px; margin-top:6px">داشبورد مدیریت با آمار ساده</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>تحصیلات</h3>
+        <div class="item">
+          <strong>پُهنتون خوانده</strong>
+          <div style="color:var(--muted); margin-top:6px">مطالعات مرتبط با علوم کامپیوتر و توسعه وب.</div>
+        </div>
+      </div>
+
+      <div class="section" id="contact">
+        <h3>درخواست پروژه / تماس</h3>
+        <p style="color:var(--muted)">برای سفارش یا سوال، یکی از راه‌های زیر را انتخاب کن:</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://wa.me/93790515037" target="_blank">ارسال پیام واتساپ</a>
+          <a class="btn btn-outline" href="tel:+93745647237">تماس مستقیم</a>
+        </div>
+        <div style="margin-top:12px; color:var(--muted)">
+          <small>طراحی برای افزایش تبدیل و جذب مشتری انجام شده — CTA واضح و راه‌های آسان تماس.</small>
+        </div>
+      </div>
+
+      <footer>
+        ساخته شده توسط <strong>Mujibur Rahman Noori</strong> — طراحی مدرن آبی و سفید • آماده برای Vercel
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
